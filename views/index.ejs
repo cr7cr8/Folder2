@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mongo File Uploads</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <div class="containter bg-light">
+        <div class="row col-md-12 col-sm-12 col-lg-12 justify-content-center">
+            <h1 class="text-center display-4 my-4">Mongo File Uploads</h1>
+        </div>
+
+        <div class="row col-md-12 col-sm-12 col-lg-12 justify-content-center">
+            <h5 class="text-center my-4">
+                <%=new Date().getHours()%>:<%=new Date().getMinutes()%>:<%=new Date().getSeconds()%>
+            </h5>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-6 m-auto">
+                <form id="#fileUploadForm" action="/upload" method="POST" enctype="multipart/form-data">
+                    <div class="custom-file mb-3">
+                        <input type="file" name="file" id="file" class="custom-file-input" />
+                        <label for="file" id="label" class="custom-file-label"></label>
+                    </div>
+                    <input type="submit" value="Submit" id="btnSubmit" class="btn btn-primary btn-block" />
+                </form>
+            </div>
+        </div>
+
+        <!--
+        <div class="row col-md-12 col-sm-12 col-lg-12 justify-content-center mx-auto my-4">
+
+            <form id="#fileUploadForm" action="/upload" method="POST" enctype="multipart/form-data">
+
+                <input type="file" name="file" id="file" class="custom-file-input mx-1 mx-md-5 mx-lg-5" />
+                <label for="file" class="custom-file-label  mx-1 mx-md-5 mx-lg-5"></label>
+
+                <input type="submit" value="Submit" id="btnSubmit" class="btn btn-primary btn-block mt-3 " />
+            </form>
+        </div>
+-->
+
+
+        <div class="row  justify-content-center mt-4">
+            <!-- <div class="card card-body col-md-12 col-sm-12 col-lg-12 mx-auto mt-4 bg-light"> -->
+                <img id="img1" class="" src="<%= src %>" height="100" width="100"></img>
+                <a id="ida" class="mx-4" href="<%= src %>">aaa </a>
+                <!-- <audio controls class="">
+                    <source src="/files/心墙_d96" type="audio/mpeg">
+
+                    Your browser does not support the audio element.
+                </audio> -->
+
+
+
+
+            <!-- </div> -->
+
+        </div>
+        <script src="/js/min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="index.js"></script>
+
+
+</body>
+
+</html>
